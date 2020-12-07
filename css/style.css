@@ -9,6 +9,16 @@ body {
     overflow-x: hidden;
     color: white;
     font-family: "Roboto";
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
 }
 
 header {
@@ -32,7 +42,7 @@ header {
 }
 
 .logo {
-    width: 340px;
+    width: 250px;
     float: left;
 }
 
@@ -77,7 +87,7 @@ header {
     top: 20%;
 }
 
-h1 {
+.mates{
     color: #fff;
     font-size: 92px;
     word-spacing: 5px;
@@ -86,7 +96,7 @@ h1 {
     font-weight: bolder;
 }
 
-h4 {
+.matesText {
     font-size: 24px;
     text-align: center;
 }
@@ -133,8 +143,8 @@ h4 {
 }
 
 .AR2 {
-    width: 90%;
-    margin-top: 18px;
+    width: 85%;
+    height: 82vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -155,6 +165,102 @@ h4 {
 
 .colorchange {
     animation: colorchangethapa 1s infinite;
+}
+
+#events{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32 33 37 / 98%);
+}
+
+.eventHeading{
+    display: flex;
+    /* border: hotpink solid 2px; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.upcomingHead{
+    margin: auto;
+}
+.upcomingHead span {
+    font-family: fantasy;
+    font-size: 50px;
+    color: #f38c0ed1;
+    text-shadow: -4px -2px black;
+}
+#upcoming{
+    margin-left: auto;
+    background-color: #f38c0ed1;
+    width: 100px;
+    height: 10px;
+    border: black;
+    border-radius: 8px; 
+    box-shadow: -4px -2px black;
+}
+.updatesHead{
+    margin: auto;   
+}
+.updatesHead span {
+    font-family: fantasy;
+    font-size: 50px;
+    color: #f38c0ed1;
+    text-shadow: -4px -2px black;
+}
+
+#updates{
+    margin-left: auto;
+    background-color: #f38c0ed1;
+    width: 80px;
+    height: 10px;
+    border: black;
+    border-radius: 8px; 
+    box-shadow: -4px -2px black;
+}
+.eventUpdates{
+    display: flex;
+    /* border: darkred solid 2px; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    height: 80vh;
+}
+
+.upcomingEvents{
+    /* border: black solid 2px; */
+    width: 60%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.upcomingEvents span{
+    font-size: 80px;
+    font-weight: 200;
+    background: linear-gradient(90deg, rgba(194,79,79,1) 0%, rgba(182,128,26,1) 35%, rgba(8,147,176,1) 100%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    text-shadow: #00000070 -2px -2px;
+}
+
+.updatesEvents{
+    /* border: black solid 2px; */
+    width: 30%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.updatesEvents span{
+    font-size: 80px;
+    font-weight: 200;
+    background: linear-gradient(90deg, rgba(194,79,79,1) 0%, rgba(182,128,26,1) 35%, rgba(8,147,176,1) 100%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    text-shadow: #00000070 -2px -2px;
 }
 
 @keyframes colorchangethapa {
@@ -188,7 +294,7 @@ h4 {
 }
 
 @media only screen and (max-width: 998px) {
-    h1 {
+    .mates {
         font-size: 300%;
     }
     .AR1 {
@@ -205,7 +311,7 @@ h4 {
         font-size: 20px;
         top: 100%;
     }
-    h4 {
+    .matesText {
         font-size: 15px;
     }
     header {
@@ -259,10 +365,10 @@ h4 {
         height: 100px;
         margin-top: 10px;
     }
-    h1 {
+    .mates {
         font-size: 30px;
     }
-    h4 {
+    .matesText {
         font-size: 12px;
     }
     .btn {
@@ -279,10 +385,10 @@ h4 {
 }
 
 @media only screen and (max-width: 500px) {
-    h4 {
+    .matesText {
         display: none;
     }
-    h1 {
+    .mates {
         transform: translateY(+40px);
     }
     .logo {
