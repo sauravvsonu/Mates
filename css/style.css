@@ -207,6 +207,8 @@ header {
     font-size: 50px;
     color: #f38c0ed1;
     text-shadow: -4px -2px black;
+    letter-spacing: 2px;
+
 }
 
 #updates{
@@ -243,6 +245,8 @@ header {
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
     text-shadow: #00000070 -2px -2px;
+    letter-spacing: 2px;
+    
 }
 
 .updatesEvents{
@@ -261,6 +265,53 @@ header {
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
     text-shadow: #00000070 -2px -2px;
+}
+
+#contact{
+    background: url("../images/MatES\ logo.png" ) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact{
+    height: 100vh;
+    background: rgb(0 0 0 / 77%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactDetails{
+    display: grid;
+    justify-items: center;
+}
+
+.contact span{
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: 600;
+    color: #dc6500e3;
+    text-shadow: #040200 -2px -2px;
+    text-transform: uppercase;
+}
+
+.contact button{
+       /* font: icon; */
+       letter-spacing: 2px;
+       font-family: fantasy;
+       font-size: 37px;
+       background: #ff8c00;
+       border: solid 0px 0px;
+       margin-top: 20px;
+       width: 350px;
+       height: 65px;
+       border-radius: 40px;
+       text-transform: uppercase;     
+}
+
+.contact button a { 
+    text-decoration: none;
+    color: white;
 }
 
 @keyframes colorchangethapa {
