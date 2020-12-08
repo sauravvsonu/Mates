@@ -167,6 +167,8 @@ header {
     animation: colorchangethapa 1s infinite;
 }
 
+/* ///////////////////////////- EVENTS CSS -/////////////////////// */
+
 #events{
     width: 100%;
     height: 100vh;
@@ -185,7 +187,7 @@ header {
     margin: auto;
 }
 .upcomingHead span {
-    font-family: fantasy;
+    font-family: "Roboto";
     font-size: 50px;
     color: #f38c0ed1;
     text-shadow: -4px -2px black;
@@ -203,7 +205,7 @@ header {
     margin: auto;   
 }
 .updatesHead span {
-    font-family: fantasy;
+    font-family: "Roboto";
     font-size: 50px;
     color: #f38c0ed1;
     text-shadow: -4px -2px black;
@@ -267,6 +269,8 @@ header {
     text-shadow: #00000070 -2px -2px;
 }
 
+/* /////////////////////-  CONTACT CSS  -\\\\\\\\\\\\\\\\\\\\ */
+
 #contact{
     background: url("../images/MatES\ logo.png" ) no-repeat;
     background-position: center;
@@ -287,7 +291,7 @@ header {
 }
 
 .contact span{
-    font-family: cursive;
+    font-family: "Roboto";
     font-size: 50px;
     font-weight: 600;
     color: #dc6500e3;
@@ -297,8 +301,9 @@ header {
 
 .contact button{
        /* font: icon; */
-       letter-spacing: 2px;
-       font-family: fantasy;
+       /* letter-spacing: 2px; */
+       font-family: "Roboto";
+        font-weight: 800;
        font-size: 37px;
        background: #ff8c00;
        border: solid 0px 0px;
@@ -312,7 +317,145 @@ header {
 .contact button a { 
     text-decoration: none;
     color: white;
+    text-align: center;
 }
+
+/* ///////////////////-  footer  -\\\\\\\\\\\\\\\\\ */
+
+#footer{
+    background: rgb(32 33 37 / 98%);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    /* border: green 2px solid; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;   
+}
+
+.address{
+    display: inline;
+    justify-content: center;
+}
+.address h3{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #f38c0ed1;
+    text-shadow: -2px -2px black;
+}
+
+.address span{
+    display: flex;
+}
+
+.address span h6{
+    color: #f3ad2f;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.contacts{
+    display: inline;
+    justify-content: center;
+}
+.contacts h3{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #f38c0ed1;
+    text-shadow: -2px -2px black;
+}
+
+.contacts div{
+    display: grid;
+}
+.contacts div a{
+    text-decoration: none;
+    color: #f3ad2f;
+    font-size: 15px;
+}
+
+.contacts div span{
+    text-decoration: none;
+    color: #f3ad2f;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.contacts div a span{
+    margin-left: 10px;
+}
+
+.contacts div span span{
+    margin-left: 10px;
+}
+
+.quickLinks{
+    display: inline;
+    justify-content: center;
+}
+.quickLinks h3{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #f38c0ed1;
+    text-shadow: -2px -2px black;
+}
+
+.quickLinks ul{
+ 
+}
+
+.quickLinks ul li {
+    list-style: none;
+}
+
+.quickLinks ul li a{
+  text-decoration: none;
+  color: #f3ad2f;
+  font-family: monospace;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 5px;
+
+}
+.social{
+    display: inline;
+    justify-content: center;
+}
+.social h3{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #f38c0ed1;
+    text-shadow: -2px -2px black;
+}
+
+.social a {
+    text-decoration: none;
+    margin-top: 15px;
+
+}
+
+.social a i {
+    color: #f3ad2f;
+    font-size: 30px;
+    margin: 0 5px;
+}
+
+/* ////////////////////- ANIMATIONS -\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 @keyframes colorchangethapa {
     0% {
