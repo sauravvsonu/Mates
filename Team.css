@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: "Roboto";
+}
+
+header {
+    background-image: url('../images/team.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row {
+    max-width: 1920px;
+}
+
+.logo {
+    width: 340px;
+    float: left;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.main-nav li.N1 a {
+    padding: 5px 0;
+    color: #FEA501;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.main-nav li a {
+    padding: 5px 0;
+    color: #2A0001;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.main-nav li a:hover {
+    border-bottom: 3px solid #FEA501;
+}
+
+.Awesome{
+    color: black;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    margin-top: 60px;
+}
+
+.awesome{
+    color: #FEA501;
+}
+.our1{
+    color: #2A0001;
+}
+
+.column2 {
+  float: left;
+  width: 33.33%;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+.row2:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.Photos{
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+}
+.name{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.por{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight:800;
+}
+
+.Intro{
+    color: black;
+    text-align: center;
+    margin-right: 120px;
+    margin-top: 50px;
+}
+.colorchange {
+    animation: colorchangethapa 1s infinite;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+    display:inline-block;
+}
+
+.row1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.comman{
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.our{
+    color: #2A0001;
+}
+.vision{
+    color: #FEA501;
+}
+.text{
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    background-color: #242527;
+    color: #FEA501;
+    font-size: 20px;
+    height: 180px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.Heading{
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    color: #FEA501;
+    text-shadow: -4px 1px #2A0001;
+}
+
+.column4 {
+    float: left;
+    width: 25%;
+    display:inline-block;
+}
+
+.row3:after {
+  content: "";
+  clear: both;
+}
+.onesec{
+    padding-right: 15px;
+}
+.onesec1{
+    padding-top: 15px;
+    margin-right: 42px;
+}
+
+.Links a{
+    text-decoration: none;
+    color: #FEA501;
+}
+.Links a:hover{
+    color: #fff;
+}
+.mobile-icon {
+    display: none;
+}
+@media only screen and (max-width: 1200px) {
+    .logo{
+        width: 200px;
+    }
+    .main-nav {
+        display: none;
+    }
+    .mobile-icon {
+        display: inline-block;
+        color: #FEA501;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav {
+        float: left;
+    }
+    .main-nav li {
+        display: block;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 998px) {
+    .column2{
+        float:inherit;
+        width: 30%;
+    }
+    .column1{
+        float:inherit;
+        width: 100%;
+    }
+    .text{
+        margin-left: 40px;
+        margin-right: 40px;  
+    }
+    header{
+        background-size: contain;
+    }
+    .logo {
+        width: 200px;
+        height: 140px;
+    }
+    .Intro{
+        margin: 0px;
+        margin-top: -220px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .column2{
+        width: 100%;
+    }
+    .logo {
+        width: 130px;
+        height: 90px;
+        margin-top: 10px;
+    }
+    .Intro{
+        margin-top: -430px;
+    }
+    .column4{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    footer{
+        height: 575px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .Intro{
+        margin-top: -500px;
+    }
+}
