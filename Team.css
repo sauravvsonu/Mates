@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-image: url('../images/team.png');
+    background-image:url(images/team.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
