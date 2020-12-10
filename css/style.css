@@ -9,16 +9,6 @@ body {
     overflow-x: hidden;
     color: white;
     font-family: "Roboto";
-    overflow-y: scroll;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
-body {
-  -ms-overflow-style: none; 
-  scrollbar-width: none;  
 }
 
 header {
@@ -42,7 +32,7 @@ header {
 }
 
 .logo {
-    width: 250px;
+    width: 340px;
     float: left;
 }
 
@@ -87,7 +77,7 @@ header {
     top: 20%;
 }
 
-.mates{
+h1 {
     color: #fff;
     font-size: 92px;
     word-spacing: 5px;
@@ -96,7 +86,7 @@ header {
     font-weight: bolder;
 }
 
-.matesText {
+h4 {
     font-size: 24px;
     text-align: center;
 }
@@ -143,8 +133,8 @@ header {
 }
 
 .AR2 {
-    width: 85%;
-    height: 82vh;
+    width: 90%;
+    margin-top: 18px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -167,8 +157,29 @@ header {
     animation: colorchangethapa 1s infinite;
 }
 
-/* ///////////////////////////- EVENTS CSS -/////////////////////// */
+@keyframes colorchangethapa {
+    0% {
+        color: red;
+    }
+    25% {
+        color: #bf55ec;
+        ;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: #bf55ec;
+    }
+}
 
+.mobile-icon {
+    display: none;
+}
+
+
+/* ///////////////////////////- EVENTS CSS -/////////////////////// */
+/* 
 #events{
     width: 100%;
     height: 100vh;
@@ -177,7 +188,7 @@ header {
 
 .eventHeading{
     display: flex;
-    /* border: hotpink solid 2px; */
+    
     align-items: center;
     justify-content: space-between;
     padding: 2%;
@@ -187,7 +198,7 @@ header {
     margin: auto;
 }
 .upcomingHead span {
-    font-family: "Roboto";
+    font-family: "Montserrat";
     font-size: 50px;
     color: #f38c0ed1;
     text-shadow: -4px -2px black;
@@ -205,7 +216,7 @@ header {
     margin: auto;   
 }
 .updatesHead span {
-    font-family: "Roboto";
+    font-family: "Montserrat";
     font-size: 50px;
     color: #f38c0ed1;
     text-shadow: -4px -2px black;
@@ -224,7 +235,7 @@ header {
 }
 .eventUpdates{
     display: flex;
-    /* border: darkred solid 2px; */
+   
     align-items: center;
     justify-content: space-between;
     padding: 2%;
@@ -232,7 +243,7 @@ header {
 }
 
 .upcomingEvents{
-    /* border: black solid 2px; */
+  
     width: 60%;
     height: 100%;
     display: grid;
@@ -252,7 +263,7 @@ header {
 }
 
 .updatesEvents{
-    /* border: black solid 2px; */
+    
     width: 30%;
     height: 100%;
     display: grid;
@@ -267,6 +278,74 @@ header {
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
     text-shadow: #00000070 -2px -2px;
+} */
+
+#events{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(32 33 37 / 98%);
+    padding: 4%;
+}
+
+.section{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    /* border: solid green 2px; */
+}
+
+.upcomingHead{
+    /* border: red solid 2px; */
+}
+
+.upcomingHead span {
+    font-family: "Montserrat";
+    font-size: 50px;
+    color: #f38c0ed1;
+    text-shadow: -4px -2px black;
+}
+
+.updatesHead{
+    /* border: red solid 2px; */
+}
+
+.updatesHead span {
+    font-family: "Montserrat";
+    font-size: 50px;
+    color: #f38c0ed1;
+    text-shadow: -4px -2px black;
+    letter-spacing: 2px;
+}
+
+.upcomingEvents{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.eventPics{
+    /* border: red solid 2px; */
+    padding: 10px;
+    padding-left: 0;
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , 250px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    /* grid-template-rows: 1fr 1fr; */
+}
+
+
+.upcomingEvents img{
+    width: 95%;  
+    /* padding: 25px;
+    padding-left: 0; */
+}
+
+
+.updatesEvents{
+    /* border: red solid 2px; */
+    padding: 10px;
 }
 
 /* /////////////////////-  CONTACT CSS  -\\\\\\\\\\\\\\\\\\\\ */
@@ -291,7 +370,7 @@ header {
 }
 
 .contact span{
-    font-family: "Roboto";
+    font-family: "Montserrat";
     font-size: 50px;
     font-weight: 600;
     color: #dc6500e3;
@@ -302,13 +381,14 @@ header {
 .contact button{
        /* font: icon; */
        /* letter-spacing: 2px; */
-       font-family: "Roboto";
-        font-weight: 800;
+       font-family: "Montserrat";
+    font-weight: 800;
+   font-size: 37px;
        font-size: 37px;
        background: #ff8c00;
        border: solid 0px 0px;
        margin-top: 20px;
-       width: 350px;
+       width: 50%;
        height: 65px;
        border-radius: 40px;
        text-transform: uppercase;     
@@ -319,6 +399,14 @@ header {
     color: white;
     text-align: center;
 }
+
+/* #contact_buttonText{
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 800;
+   font-size: 37px;
+   text-shadow: #040200 0px 0px;
+} */
 
 /* ///////////////////-  footer  -\\\\\\\\\\\\\\\\\ */
 
@@ -343,7 +431,7 @@ header {
     justify-content: center;
 }
 .address h3{
-    font-family: monospace;
+    font-family: "Montserrat";
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 10px;
@@ -366,7 +454,7 @@ header {
     justify-content: center;
 }
 .contacts h3{
-    font-family: monospace;
+    font-family: "Montserrat";
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 10px;
@@ -403,7 +491,7 @@ header {
     justify-content: center;
 }
 .quickLinks h3{
-    font-family: monospace;
+    font-family: "Montserrat";
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 10px;
@@ -422,7 +510,7 @@ header {
 .quickLinks ul li a{
   text-decoration: none;
   color: #f3ad2f;
-  font-family: monospace;
+  font-family: "Montserrat";
   font-size: 13px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -435,7 +523,7 @@ header {
     justify-content: center;
 }
 .social h3{
-    font-family: monospace;
+    font-family: "Montserrat";
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 10px;
@@ -457,27 +545,6 @@ header {
 
 /* ////////////////////- ANIMATIONS -\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
-@keyframes colorchangethapa {
-    0% {
-        color: red;
-    }
-    25% {
-        color: #bf55ec;
-        ;
-    }
-    50% {
-        color: white;
-    }
-    100% {
-        color: #bf55ec;
-    }
-}
-
-.mobile-icon {
-    display: none;
-}
-
-
 /*//////// Responsive queries //////////*/
 
 @media only screen and (max-width: 1180px) {
@@ -488,7 +555,7 @@ header {
 }
 
 @media only screen and (max-width: 998px) {
-    .mates {
+    h1 {
         font-size: 300%;
     }
     .AR1 {
@@ -505,7 +572,7 @@ header {
         font-size: 20px;
         top: 100%;
     }
-    .matesText {
+    h4 {
         font-size: 15px;
     }
     header {
@@ -526,6 +593,13 @@ header {
     .btn {
         padding: 10px 10px;
         font-size: 25px;
+    }
+    /* .eventPics{
+        grid-template-columns: repeat(auto-fit , 180px);
+    } */
+
+    .contactDetails span:first-child{
+        font-size: 2rem;
     }
 }
 
@@ -559,10 +633,10 @@ header {
         height: 100px;
         margin-top: 10px;
     }
-    .mates {
+    h1 {
         font-size: 30px;
     }
-    .matesText {
+    h4 {
         font-size: 12px;
     }
     .btn {
@@ -576,13 +650,37 @@ header {
         display: block;
         margin-top: 10px;
     }
+    .section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr 1fr 5fr;
+        /* border: solid green 2px; */
+    }
+    .updatesHead{
+        margin-top: 30px;
+    }
+    .eventPics{
+        /* border: red solid 2px; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit , 180px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+    .contactDetails span:first-child{
+        font-size: 20px;
+    }
+    .contactDetails p{
+        font-size: x-large;
+    }
 }
 
-@media only screen and (max-width: 500px) {
-    .matesText {
+@media only screen and (max-width: 480px) {
+    h4 {
         display: none;
     }
-    .mates {
+    h1 {
+        font-size: 20px;
         transform: translateY(+40px);
     }
     .logo {
@@ -599,5 +697,22 @@ header {
     .top-center {
         font-size: 8px;
         top: 52%;
+    }
+    .btn {
+        font-size: 11px;
+    }
+    .eventPics{
+        /* border: red solid 2px; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit , 180px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+    .contactDetails span:first-child{
+        font-size: 20px;
+    }
+    .contactDetails p{
+        font-size: large;
     }
 }
