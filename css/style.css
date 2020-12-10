@@ -302,7 +302,7 @@ h4 {
 .upcomingHead span {
     font-family: "Montserrat";
     font-size: 50px;
-    color: #f38c0ed1;
+    color: #fea501;
     text-shadow: -4px -2px black;
 }
 
@@ -313,7 +313,7 @@ h4 {
 .updatesHead span {
     font-family: "Montserrat";
     font-size: 50px;
-    color: #f38c0ed1;
+    color: #fea501;
     text-shadow: -4px -2px black;
     letter-spacing: 2px;
 }
@@ -358,7 +358,7 @@ h4 {
 
 .contact{
     height: 100vh;
-    background: rgb(0 0 0 / 77%);
+    background: #242527;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,7 +373,7 @@ h4 {
     font-family: "Montserrat";
     font-size: 50px;
     font-weight: 600;
-    color: #dc6500e3;
+    color: #fea501;
     text-shadow: #040200 -2px -2px;
     text-transform: uppercase;
 }
@@ -385,7 +385,7 @@ h4 {
     font-weight: 800;
    font-size: 37px;
        font-size: 37px;
-       background: #ff8c00;
+       background: #fea501;
        border: solid 0px 0px;
        margin-top: 20px;
        width: 50%;
@@ -435,7 +435,7 @@ h4 {
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 10px;
-    color: #f38c0ed1;
+    color: #fea501;
     text-shadow: -2px -2px black;
 }
 
@@ -444,7 +444,7 @@ h4 {
 }
 
 .address span h6{
-    color: #f3ad2f;
+    color: #fea501;
     font-size: 15px;
     margin-left: 15px;
 }
@@ -704,7 +704,7 @@ h4 {
     .eventPics{
         /* border: red solid 2px; */
         display: grid;
-        grid-template-columns: repeat(auto-fit , 180px);
+        grid-template-columns: repeat(auto-fit , 150px);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         /* grid-template-rows: 1fr 1fr; */
@@ -716,3 +716,4 @@ h4 {
         font-size: large;
     }
 }
+
